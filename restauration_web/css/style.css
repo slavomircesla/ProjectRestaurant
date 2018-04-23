@@ -4,9 +4,16 @@ body {
 	-webkit-text-size-adjust:100%;
 }
 
-
 section {
   padding: 150px 0;
+}
+
+.orangebg {
+    background: linear-gradient(to bottom, #FFCEB6, #FFB590)
+}
+
+.pointers {
+    cursor: pointer;
 }
 
 .carousel-item {
@@ -77,12 +84,6 @@ section {
     padding-bottom: 20px;
 }
 
-#myFooter .footer-copyright {
-    background-color: #333333;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    text-align: center;
-}
 
 #myFooter .row {
     margin-bottom: 60px;
@@ -93,11 +94,6 @@ section {
     height: 65px;
 }
 
-#myFooter .footer-copyright p {
-    margin: 10px;
-    color: #ccc;
-}
-
 #myFooter ul {
     list-style-type: none;
     padding-left: 0;
@@ -106,7 +102,7 @@ section {
 
 #myFooter h5 {
     font-size: 18px;
-    color: white;
+    color: #FFE4E1;
     font-weight: bold;
     margin-top: 30px;
 }

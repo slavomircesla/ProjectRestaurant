@@ -31,4 +31,19 @@
      return false;
   });
 
+  $("a[href='#down']").click(function() {
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: n }, "slow");
+    return false;
+  });
+ 
+   $('#beers').click(function() {
+      $('#ulBeers').toggle("slow");
+   });
+
+   $('#hotDrinks').click(function() {
+      $('#hot-drinks').toggle("slow");
+   });
+
+
 })(jQuery); // End of use strict
