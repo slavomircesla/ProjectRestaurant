@@ -43,9 +43,8 @@
             <li class="nav-item">
           <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Search for...">
               <span class="input-group-append">
-                <button class="btn btn-search" type="button"><img src="img/search.png">Search</button>
+                <div><img src="img/shopping-cart.png"></div>
               </span>
             </div>
           </form>
@@ -109,8 +108,8 @@
       <div class="container inner">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 class="section-title text-center textFood">Food Menu</h2>
-            <p class="lead main text-center textFood">There is no sincerer love than the love of food!</p>
+            <h2 class="section-title text-center">Food Menu</h2>
+            <p class="lead main text-center">There is no sincerer love than the love of food!</p>
           </div>
         </div>
         <div class="row">
@@ -170,19 +169,19 @@
                  <div class="container">
                 <div class="row" style="display: none;" id="mainFoodMenu">
            <div class="col-sm" id="appetizer">
-                    <div class="menu-images" ><img src="img/menu/hot-drinks.png" alt="Appetizer"></div>
+                    <div class="menu-images" ><img src="img/menu/appetizer.jpg" alt="Appetizer"></div>
                     <div class="menu-titles"><h1>Appetizer</h1></div>
                 </div>
                 <div class="col-sm" id="soup">
-                    <div class="menu-images "><img src="img/menu/ice-drinks.png" alt="Soup"></div>
+                    <div class="menu-images "><img src="img/menu/soup.jpg" alt="Soup"></div>
                     <div class="menu-titles"><h1>Soup</h1></div>
                 </div>
                 <div class="col-sm" id="mainDish">
-                    <div class="menu-images "><img src="img/menu/smoothies.png" alt="Main dish"></div>
+                    <div class="menu-images "><img src="img/menu/mainDish.jpeg" alt="Main dish"></div>
                     <div class="menu-titles"><h1>Main dish</h1></div>
                 </div>
                  <div class="col-sm" id="salad">
-                    <div class="menu-images "><img src="img/menu/smoothies.png" alt="Salad"></div>
+                    <div class="menu-images "><img src="img/menu/salad.jpg" alt="Salad"></div>
                     <div class="menu-titles"><h1>Salad</h1></div>
                 </div>
                 <div class="col-sm" id="desert">
@@ -191,7 +190,6 @@
                 </div>
             </div>
               </div>
-
             <div class="container">
               <div class="row">
                 <div class="col-sm">
@@ -237,8 +235,9 @@
   </div>
 <div class="col-sm"></div>
     </div>
+    <button type="button" class="btn btn-danger" id="buttonBack" style="display: none;">Back</button>
 </div>
-  <button type="button" class="btn btn-danger" id="buttonBack" style="display: none;">Back</button>
+  
   </div>
 <div class="col-sm"></div>
     </div>
@@ -248,10 +247,10 @@
 <div class="row">
 <div class="col"></div>
 <div class="col-2" id="btnMenu">
-<button type="button" class="btn btn-danger" id="backToMenu" style="display: none;">Back</button>
   </div>
 <div class="col"></div>
     </div>
+    <button type="button" class="btn btn-danger" id="backToMenu" style="display: none;">Back</button>
       </div>
       </section>
 
@@ -380,32 +379,29 @@
         </div>
         <div class="modal-body">
           <p> <div reservStyle">
-              <form method="POST" action="/send">
-                {{msg}}
+              <form method="Post" action="send">
                 <div class="form-group">
-                 <label>Name:</label>
-                  <input type="text" class="form-control" placeholder="Enter your name" name="name">
+                 <label for="formGroupExampleInput">Name:</label>
+                  <input type="text" class="form-control" name="name" placeholder="Enter your name">
                 </div>
                 <div class="form-group">
-                  <label>Surname:</label>
-                  <input type="text" class="form-control" placeholder="Enter your surname" name="surname">
+                  <label for="formGroupExampleInput2">Surname:</label>
+                  <input type="text" class="form-control" name="surname" placeholder="Enter your surname">
                 </div>
                  <div class="form-group">
-                  <label>E-mail:</label>
-                  <input type="email" class="form-control" placeholder="example@gmail.com" name="email">
+                  <label for="formGroupExampleInput2">E-mail:</label>
+                  <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
                 </div>
                  <div class="form-group">
-                  <label>Phone Number:</label>
-                  <input type="text" class="form-control" placeholder="+421 xxx xxx xxx" name="phone">
+                  <label for="formGroupExampleInput2">Phone Number:</label>
+                  <input type="text" class="form-control" name="phone" placeholder="+421 xxx xxx xxx" name=>
                 </div>
                 <div class="form-group">
-            
-                  <button type="submit" class="btn btn-warning">Click here to book table!</button>
+                  <button type="submit" class="btn btn-warning" id="send">Click here to book table!</button>
                 </form>
                 </label>
-                </div> 
-                
-             
+                </div>
+              
             </div>
           </p>
         </div>
